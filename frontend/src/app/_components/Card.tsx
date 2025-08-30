@@ -11,8 +11,8 @@ type Props = {
 
 const Card = ({image, title, description, price} : Props) => {
   return (
-     <Link href={`/shop/${title}/${title}`} className="rounded-2xl bg-white">
-          <div className="relative h-[250px]">
+     <Link href={`/shop/${title}`} className="rounded-2xl bg-black text-white">
+          <div className="relative h-[250px] brightness-50">
             <Image
               className="object-cover rounded-t-2xl"
               src={image}

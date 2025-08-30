@@ -1,36 +1,36 @@
 import Card from "@/app/_components/Card";
 import React from "react";
-import feature1 from "../../../../public/images/feature1.png";
-import feature2 from "../../../../public/images/feature2.jpg";
-import feature3 from "../../../../public/images/feature3.jpg";
-import feature4 from "../../../../public/images/feature4.jpeg";
+import feature1 from "../../../../public/images/suits (1).jpg";
+import feature2 from "../../../../public/images/suits (2).jpg";
+import feature3 from "../../../../public/images/suits (3).jpg";
+import feature4 from "../../../../public/images/suits (4).jpg";
 
 const page = () => {
   const features = [
     {
-      title: "ADAS",
-      description: "five star rating",
-      price: 420,
-      image: feature1,
-    },
-    {
-      title: "Super Charging",
-      description: "fast charge",
-      price: 42,
-      image: feature2,
-    },
-    {
-      title: "Speaker",
-      description: "Jbl speakers",
-      price: 42,
-      image: feature3,
-    },
-    {
-      title: "Ventillated seats",
-      description: "seat comfort",
-      price: 42,
-      image: feature4,
-    },
+            name : 'Tweed Suit',
+            description : 'A suit made from a rough, tightly woven wool fabric, ideal for colder weather',
+            price : 420,
+            image : feature1
+        },
+        {
+            name : 'Linen Suit',
+            description : 'A light and breathable suit made from linen, perfect for summer.',
+            price : 42,
+            image : feature2
+        },
+        {
+            name : 'Velvet Suit',
+            description : 'A luxurious suit made from velvet, often for special evening events.',
+            price : 42,
+            image : feature3
+        },
+        {
+            name : 'Plaid Suit',
+            description : 'A suit with a checked or patterned fabric.',
+            price : 42,
+            image : feature4
+        }
   ];
 
   return (
@@ -43,7 +43,7 @@ const page = () => {
             <Card
               key={index}
               image={item.image}
-              title={item.title}
+              title={item.name}
               description={item.description}
               price={item.price}
             />

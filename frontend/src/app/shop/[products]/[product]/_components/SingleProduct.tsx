@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
   title: string;
   description: string;
   price: number;
-  isAvailable: boolean;
+  isAvailable: boolean
 };
 
 const SingleProduct = ({
@@ -17,7 +18,7 @@ const SingleProduct = ({
   isAvailable,
 }: Props) => {
   return (
-    <div>
+    <Link href={`/shop/${title}/${title}`}>
       <div className="relative h-100">
         <Image
           alt="product"
@@ -30,8 +31,8 @@ const SingleProduct = ({
         <h2 className="text-3xl font-bold">{title}</h2>
         <p className="text-gray-700">Address</p>
         <h4 className="font-extrabold">
-          Price: <span className="text-gray-700">{price}</span> Availability :{" "}
-          <span className="text-gray-700">{isAvailable}</span>
+          Price: <span className="text-gray-700">{price}</span> Availability : <span>{isAvailable}</span>
+          <span className="text-gray-700">{}</span>
         </h4>
         <h4 className="font-extrabold">Description</h4>
         <p className="text-gray-700">{description}</p>
@@ -39,7 +40,7 @@ const SingleProduct = ({
           Add to Cart
         </button>
       </div>
-    </div>
+    </Link>
   );
 };
 

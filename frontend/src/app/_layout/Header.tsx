@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div
-      className="flex justify-between items-center h-18 px-4"
+      className="flex justify-between items-center h-18 px-4 bg-black text-white"
     >
       <h1 className="font-bold text-3xl">THE MEN COMPANY</h1>
       <div className="flex gap-5 font-medium items-center max-md:hidden">
