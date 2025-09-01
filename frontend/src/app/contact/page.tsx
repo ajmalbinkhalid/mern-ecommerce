@@ -7,10 +7,10 @@ import EmailSvg from "../_svg/EmailSvg";
 
 const page = () => {
   return (
-    <div className="h-screen">
-      <div className="relative h-full">
+    <div className="h-screen bg-black">
+      {/* <div className="relative h-full">
         <Image alt="image" src={background} fill className="object-cover" />
-      </div>
+      </div> */}
       <div className=" absolute top-1/2 text-white p-5 max-md:top-1/4">
         <div className="text-center">
           <h1 className="text-5xl mb-4 max-md:text-3xl">CONTACT US</h1>

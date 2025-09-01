@@ -18,7 +18,7 @@ const SingleProduct = ({
   isAvailable,
 }: Props) => {
   return (
-    <Link href={`/shop/${title}/${title}`}>
+    <div>
       <div className="relative h-100">
         <Image
           alt="product"
@@ -40,7 +40,7 @@ const SingleProduct = ({
           Add to Cart
         </button>
       </div>
-    </Link>
+    </div>
   );
 };
 
