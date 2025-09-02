@@ -75,7 +75,7 @@ const page = () => {
             </td>
             <td>{item.price}</td>
             <td>
-              <button>Delete</button>
+              <button className="border p-2 rounded-2xl bg-red-700 text-white">Delete</button>
             </td>
           </tr>
         </tbody>

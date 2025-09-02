@@ -24,8 +24,8 @@ const Header = () => {
         </div>
         <div className="flex gap-5">
           <div className="relative">
-            <div className="absolute size-4 font-bold text-black -top-3 -right-1 rounded-full flex items-center justify-center">0</div>
-            <CartSvg className="size-8" />
+            <div className="absolute size-4 font-bold -top-3 -right-1 rounded-full flex items-center justify-center">0</div>
+            <Link href={"/cart"}><CartSvg className="size-8" /></Link>
           </div>
           <UserProfile className="size-8" />
         </div>

@@ -13,8 +13,7 @@ const product = {
 
 const page = () => {
   return (
-    <div className="min-h-screen p-16 flex items-center">
-      <div className="grid grid-cols-2 gap-8 ">
+    <div className="p-10">
         <SingleProduct
           image={product.image}
           title={product.name}
@@ -22,7 +21,6 @@ const page = () => {
           price={product.price}
           isAvailable={product.isAvailable}
         />
-      </div>
     </div>
   );
 };

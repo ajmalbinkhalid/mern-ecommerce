@@ -3,6 +3,7 @@ import { Geist, Geist_Mono ,DM_Sans, Montagu_Slab} from "next/font/google";
 import "./globals.css";
 import Header from "./_layout/Header";
 import Footer from "./_layout/Footer";
+import ProviderClient from "@/provider/ProviderClient";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,9 +40,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${montagu.variable} font-montagu font-inter antialiased`}
       >
+        <ProviderClient>
         <Header/>
         {children}
         <Footer/>
+        </ProviderClient>
       </body>
     </html>
   );

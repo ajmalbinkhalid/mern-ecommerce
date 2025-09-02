@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -18,8 +17,8 @@ const SingleProduct = ({
   isAvailable,
 }: Props) => {
   return (
-    <div>
-      <div className="relative h-100">
+    <div className="grid grid-cols-2 gap-10">
+      <div className="relative h-140">
         <Image
           alt="product"
           src={image}
